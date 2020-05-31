@@ -7,29 +7,27 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 // ! Una ruta que no exista aborta la instalación del APP_SHELL  
 
-let swRoot = '';
-self.location.hostname === 'localhost' ? swRoot = '' : swRoot = '/pwa_twittor';
 
 const APP_SHELL = [
     // '/', // ! falla en GitHub Pages
-    swRoot + '/index.html',
-    swRoot + '/css/style.css',
-    swRoot + '/img/favicon.ico',
-    swRoot + '/img/avatars/chicken.png',
-    swRoot + '/img/avatars/crab.png',
-    swRoot + '/img/avatars/donkey.png',
-    swRoot + '/img/avatars/frog.png',
-    swRoot + '/img/avatars/turtle.png',
-    swRoot + '/js/app.js',
-    swRoot + '/js/sw-utils.js'
+    '/index.html',
+    '/css/style.css',
+    '/img/favicon.ico',
+    '/img/avatars/chicken.png',
+    '/img/avatars/crab.png',
+    '/img/avatars/donkey.png',
+    '/img/avatars/frog.png',
+    '/img/avatars/turtle.png',
+    '/js/app.js',
+    '/js/sw-utils.js'
 ]
 
 const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    swRoot + '/css/animate.css',
-    swRoot + '/js/libs/jquery.js'
+    '/css/animate.css',
+    '/js/libs/jquery.js'
 ]
 
 self.addEventListener('install', e => {
