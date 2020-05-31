@@ -14,6 +14,7 @@ console.log('swRoot', swRoot);
 const APP_SHELL = [
     // '/', // ! falla en GitHub Pages
     swRoot + '/index.html',
+    swRoot + '/manifest.json',
     swRoot + '/css/style.css',
     swRoot + '/img/favicon.ico',
     swRoot + '/img/avatars/chicken.png',
